@@ -85,7 +85,7 @@ void deleteMemory(){
   //Removing shared memory
   shmd = shmget(KEY2, SEG_SIZE, 0);
   shmctl(shmd, IPC_RMID, 0);
-  printf("shared memory removed\n");
+  printf("\nshared memory removed\n");
   //Removing file
   remove("telephone");
   printf("file removed\n");
